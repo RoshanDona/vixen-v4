@@ -1,4 +1,3 @@
-
 #-----------------[ IMPORT-MODULE ]-------------------#
 
 def modules():
@@ -222,7 +221,7 @@ def clear():
 def back():
 	login()
 def contact():
-	os.system('xdg-open https://www.facebook.com/harryexeee')
+	os.system('xdg-open https://www.facebook.com/RoshanDona')
 	back()
 def linex():
 	print("""\x1b[37m----------------------------------------------""")
@@ -372,7 +371,6 @@ def login123():
 	print(""" \x1b[38;5;196m>>\x1b[37m USE DATR COOKIE """)
 	linex()
 	print(""" \x1b[38;5;196m[\x1b[37m1\x1b[38;5;196m]\x1b[37m LOGIN USING COOKIE """)
-	print(""" \x1b[38;5;196m[\x1b[37m0\x1b[38;5;196m]\x1b[37m JOIN GROUPS  """)
 	linex()
 	lgmt = input(' CHOOSE : ')
 	if lgmt == '1':
@@ -553,7 +551,7 @@ def contact():
 
 def groups():
 	linex()
-	print("OPEN SOURCE VERSION")
+	print("2.4.8")
 
 #-------------------[ CRACK-PUBLIK ]----------------#
 
